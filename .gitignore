@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Playwright reports
+playwright-report/
+test-results/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+
+# VS Code settings (optional)
+.vscode/
+
+# Package lock (optional)
+package-lock.json

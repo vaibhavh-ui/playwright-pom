@@ -1,0 +1,19 @@
+class LoginPage {
+    constructor(page) {
+      this.page = page;
+  
+      // Locators
+      this.username = '#username';
+      this.password = '#password';
+      this.loginBtn = '#loginBtn';
+    }
+  
+    // Actions (methods)
+    async login(user, pass) {
+      await this.page.fill(this.username, user);
+      await this.page.fill(this.password, pass);
+      await this.page.click(this.loginBtn);
+    }
+  }
+  
+  module.exports = LoginPage;
